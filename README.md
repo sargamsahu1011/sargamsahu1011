@@ -2,8 +2,6 @@
 
 # 👋 Hi, I'm Sargam Sahu
 
-### AI/ML Engineer · Software Engineer · AI Research
-
 <p>
   <strong>Open to AI/ML • Software Engineering • Applied AI • Research Opportunities</strong>
 </p>
