@@ -151,11 +151,8 @@ Built and deployed the company's [production website](https://krumancorporations
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=sargamsahu1011&show_icons=true&hide_border=true&count_private=true&rank_icon=github&theme=transparent" height="160"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sargamsahu1011&layout=compact&hide_border=true&theme=transparent" height="160"/>
-
 <br><br>
 
-***Research deeply. Build practically. Measure honestly.***
+***Research. deeply. Build practically. Measure honestly.***
 
 </div>
