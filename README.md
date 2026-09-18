@@ -1,450 +1,163 @@
 <div align="center">
 
-# 👋 Hi, I'm Sargam Sahu
+# Sargam Sahu
+
+**AI/ML Engineer · Applied Research · Software Engineering**
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1200&center=true&vCenter=true&width=700&lines=LLM+reliability+and+evaluation;Hallucination+detection+in+coding+models;Calibrated+ML+systems+that+ship;Research+deeply.+Build+practically.+Measure+honestly." alt="Typing SVG" />
 
 <p>
-  <strong>Open to AI/ML • Software Engineering • Applied AI • Research Opportunities</strong>
-</p>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&center=true&vCenter=true&width=850&lines=Building+Reliable+AI+Systems;Developing+Production-Ready+Software;Researching+LLM+Reliability;Machine+Learning+%7C+NLP+%7C+Generative+AI;Turning+Research+Into+Working+Systems" alt="Typing SVG" />
-
-<p>
-  <a href="https://linkedin.com/in/sargamsahu1011">LinkedIn</a> •
-  <a href="https://github.com/sargamsahu1011">GitHub</a> •
-  <a href="https://arxiv.org/abs/2608.23897">Research</a>
+  <a href="https://arxiv.org/abs/2608.23897"><img src="https://img.shields.io/badge/arXiv-2608.23897-B31B1B?style=flat-square&logo=arxiv&logoColor=white"></a>
+  <a href="https://linkedin.com/in/sargamsahu1011"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://github.com/sargamsahu1011"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white"></a>
 </p>
 
 </div>
 
 ---
 
-# 💼 Open to Opportunities
+I work on **making language models trustworthy enough to deploy** — measuring where they fail, building detectors for those failures, and shipping the result as software someone can actually use.
 
-I'm currently open to opportunities across:
+Most recently: a first-author-adjacent arXiv paper on package-name hallucinations in local coding LLMs, and a calibrated scam-detection system where I cared as much about the Brier score as the F1.
 
-**🤖 AI/ML Engineering**
-Machine Learning · Deep Learning · NLP · Generative AI · LLM Applications
-
-**💻 Software Engineering**
-Backend · Full-Stack · Java · Python · REST APIs · React
-
-**🔬 AI Research / Applied Research**
-LLM Reliability · AI Evaluation · Hallucination Detection · Agentic AI
-
-I'm particularly interested in roles where **AI research, machine learning and software engineering intersect.**
+B.Tech CSE @ JUET (2024–2028). **Open to AI/ML, applied research, and software engineering roles and internships.**
 
 ---
 
-# 🧠 About Me
+## Research
 
-```python
-class SargamSahu:
+### Names Can Hurt: Spotting Slopsquatting Risks Caused by Package Name Hallucinations in Local Coding LLMs
 
-    def __init__(self):
-        self.name = "Sargam Sahu"
-        self.role = [
-            "AI/ML Engineer",
-            "Software Engineer",
-            "AI Researcher"
-        ]
+*Akash Raj, Sargam Sahu* — [arXiv:2608.23897](https://arxiv.org/abs/2608.23897) · 2026
 
-        self.education = "B.Tech Computer Science Engineering @ JUET"
-
-        self.interests = [
-            "Machine Learning",
-            "Deep Learning",
-            "NLP",
-            "Generative AI",
-            "LLM Reliability",
-            "Agentic AI",
-            "Computer Vision",
-            "AI Research"
-        ]
-
-        self.engineering = [
-            "Java",
-            "Python",
-            "C++",
-            "JavaScript",
-            "SQL",
-            "REST APIs",
-            "React",
-            "Flask"
-        ]
-
-    def current_focus(self):
-        return [
-            "Building reliable AI systems",
-            "Developing production-oriented ML applications",
-            "Researching LLM hallucinations",
-            "Turning research into usable software"
-        ]
-
-    def looking_for(self):
-        return [
-            "AI/ML Engineering",
-            "Software Engineering",
-            "Applied AI",
-            "AI Research"
-        ]
-```
-
----
-
-# 🚀 What I Build
-
-<div align="center">
-
-|      🔬 AI Research     |  🤖 Applied AI  | 💻 Software Engineering |
-| :---------------------: | :-------------: | :---------------------: |
-|     LLM Reliability     | ML Applications |        REST APIs        |
-| Hallucination Detection |   NLP Systems   |      React / Flask      |
-|      AI Evaluation      |    AI Agents    |    Full-Stack Systems   |
-|      Generative AI      |  Explainable AI |   Production Web Apps   |
-
-</div>
-
----
-
-# 🏆 Featured Engineering Work
-
-## 🛡️ JobShield AI
-
-### AI-Powered Fake Job & Scam Detection Platform
-
-> Detect suspicious job postings, identify scam signals, extract evidence, and generate grounded explanations.
+Local coding LLMs invent package names that don't exist. Attackers register those names. We measured how often it happens, built a classifier to catch it, and tested whether developers actually notice.
 
 ```text
-                    Job Posting
-                         │
-                         ▼
-                Text Preprocessing
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │   ML Classification  │
-              │                     │
-              │ TF-IDF + LogReg     │
-              │        +            │
-              │     DistilBERT      │
-              └──────────┬──────────┘
-                         │
-                         ▼
-                 Scam Signal Layer
-                         │
-                         ▼
-                  Evidence Layer
-                         │
-                         ▼
-                 LLM Explanation
-                         │
-                         ▼
-                  Risk Assessment
+Coding prompt → Coding LLM → Generated import
+                                    ↓
+                        PyPI existence + metadata check
+                                    ↓
+                     Name & metadata feature extraction
+                                    ↓
+                          Random Forest classifier
+                                    ↓
+                            Risk classification
 ```
 
-### Highlights
+| | |
+| --- | --- |
+| Curated prompts | **300** |
+| Hallucination-free generations | **76%** |
+| Unmitigated failure rate | **79% → 28.7%** |
+| User study participants | **24** |
 
-* **17,880** job postings
-* TF-IDF + Logistic Regression
-* Platt probability calibration
-* DistilBERT control model
-* Flask REST API
-* React + Vite frontend
-* Rule-based scam-signal detection
-* Evidence extraction
-* LLM-generated explanations
-* Prompt-injection defense testing
-* Leakage-controlled evaluation
-
-### Held-Out Evaluation
-
-| Metric      |      Result |
-| ----------- | ----------: |
-| Precision   |  **96.63%** |
-| Recall      |  **80.37%** |
-| F1 Score    |  **87.76%** |
-| Brier Score | **0.01236** |
-| ECE         |   **0.76%** |
+**Contributions:** dataset curation · PyPI metadata pipeline · name-based feature engineering · classifier training and evaluation · user-study analysis
 
 ---
 
-# 🔬 AI Research
+### Cross-Model Hallucination Detection
 
-## 🧪 LLM Package Hallucination & Slopsquatting
-
-### *Names Can Hurt: Spotting Slopsquatting Risks Caused by Package Name Hallucinations in Local Coding LLMs*
-
-**Published on arXiv · 2026**
-
-<a href="https://arxiv.org/abs/2608.23897">
-<img src="https://img.shields.io/badge/Research-arXiv-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white">
-</a>
-
-### Research Pipeline
+A companion system for the harder half of the problem: an import name is not a package name, so naive PyPI lookups produce false alarms on perfectly valid code.
 
 ```text
-Coding Prompt
-     ↓
-Coding LLM
-     ↓
-Generated Package
-     ↓
-Package / PyPI Verification
-     ↓
-Name & Metadata Features
-     ↓
-Random Forest
-     ↓
-Risk Classification
+LLM output:  import cv2
+                  ↓
+           Package resolver          cv2 ≠ opencv-python
+                  ↓                         ↓
+          PyPI verification  ──→  Name reconciliation
+                                            ↓
+                                     Risk detection
 ```
 
-### Results
-
-**300 curated prompts**
-
-**76% hallucination-free code**
-
-**79% → 28.7% unmitigated failure rate**
-
-**24-person user study**
+Reconciles Python import names against their true distribution names, then combines registry verification with ML scoring so real packages aren't flagged and hallucinated ones aren't missed.
 
 ---
 
-# 🧬 Cross-Model Hallucination Detection
+## Engineering
 
-A complementary system for detecting potentially unsafe package recommendations generated by coding LLMs.
+### JobShield AI — Fake Job & Scam Detection
+
+Classifies suspicious job postings, extracts the evidence behind the call, and generates a grounded explanation instead of an opaque score.
 
 ```text
-LLM
-
-import cv2
-      │
-      ▼
-Package Resolver
-      │
-      ▼
-PyPI Verification
-      │
-      ▼
-cv2  ≠  opencv-python
-      │
-      ▼
-Name Reconciliation
-      │
-      ▼
-Risk Detection
+Job posting → Preprocessing → ┌──────────────────────────┐
+                              │ TF-IDF + LogReg (Platt)  │
+                              │ DistilBERT (control)     │
+                              └───────────┬──────────────┘
+                                          ↓
+                    Scam-signal rules → Evidence extraction
+                                          ↓
+                          LLM explanation → Risk assessment
 ```
 
-The system connects **Python import names** with their actual package distribution names while combining package verification with machine-learning analysis.
+**Held-out evaluation** — 17,880 postings, leakage-controlled splits
+
+| Metric | Result |
+| --- | ---: |
+| Precision | **96.63%** |
+| Recall | **80.37%** |
+| F1 | **87.76%** |
+| Brier score | **0.01236** |
+| ECE | **0.76%** |
+
+The calibration numbers matter more than the F1 here: a fraud tool that says *"87% likely scam"* has to mean it. Platt scaling brought expected calibration error under 1%, and DistilBERT ran as a control to confirm the linear model wasn't leaving accuracy on the table.
+
+**Stack:** Python · scikit-learn · Transformers · Flask REST API · React + Vite
+**Also built:** rule-based scam-signal layer, evidence extraction, prompt-injection defense testing
 
 ---
 
-# 📄 Research & Technical Writing
+## Experience
 
-### 🔬 Published Research
+**AI Research Intern** — Kruman Corporations · *May 2026 – Jul 2026*
+LLM package-hallucination detection, PyPI metadata analysis, ML classification, LangGraph workflows, Streamlit delivery, research evaluation.
 
-**Names Can Hurt: Spotting Slopsquatting Risks Caused by Package Name Hallucinations in Local Coding LLMs**
-
-Akash Raj · Sargam Sahu
-arXiv:2608.23897
-
----
-
-### 📝 Technical Whitepapers
-
-**Designing AI SaaS Websites: A Strategic Guide Inspired by Leading AI Companies**
-
-Technical analysis of AI SaaS product websites, trust, clarity, responsive design, UX and AI product presentation.
+**Frontend Web Development Intern** — Kruman Corporations · *Jun 2025 – Jul 2025*
+Built and deployed the company's [production website](https://krumancorporations.netlify.app/) and AI-integrated web experiences. HTML5 · CSS3 · JavaScript · Tailwind · Netlify
 
 ---
 
-**Designing AI Demos for Business: A Practical Guide Using Streamlit and Modern Web Integration**
+## Stack
 
-Practical work around transforming ML systems into user-facing demonstrations using Streamlit and integrating AI demos with modern web platforms.
+| | |
+| --- | --- |
+| **Languages** | Python · Java · C++ · JavaScript · SQL |
+| **ML / DL** | scikit-learn · TensorFlow · Transformers · pandas · NumPy |
+| **Methods** | Logistic Regression · Random Forest · TF-IDF · DistilBERT · Platt calibration · Explainable AI |
+| **LLM engineering** | LangGraph · prompt engineering · LLM evaluation · agentic workflows · prompt-injection testing |
+| **Software** | Flask · React · Vite · REST APIs · Streamlit · Git/GitHub · Agile/SDLC |
 
----
-
-# 💼 Experience
-
-## 🧠 AI Research Intern — Kruman Corporations
-
-**May 2026 – July 2026**
-
-Worked on LLM-generated Python package hallucination detection, package-name signals, PyPI metadata analysis, machine-learning classification, LangGraph workflows, Streamlit applications and research evaluation.
-
----
-
-## 🌐 Frontend Web Development Intern — Kruman Corporations
-
-**June 2025 – July 2025**
-
-Built and deployed a production-facing website and worked on AI-integrated web experiences.
-
-**Technologies:**
-HTML5 · CSS3 · JavaScript · Tailwind CSS · Git · GitHub · Netlify · Streamlit
-
-### 🌐 Client Work
-
-**Kruman Corporations — Official Website**
-
-<a href="https://krumancorporations.netlify.app/">
-<img src="https://img.shields.io/badge/Live_Website-Visit-000000?style=for-the-badge&logo=netlify&logoColor=white">
-</a>
-
----
-
-# ⚙️ Technical Arsenal
-
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=java,cpp,python,js,cs,mysql" />
+<p align="center">
+<img src="https://skillicons.dev/icons?i=python,java,cpp,js,mysql,react,vite,flask,tailwind,git,github" />
 </p>
 
-### AI / ML
+---
 
-`Machine Learning` · `Deep Learning` · `NLP` · `Generative AI` · `LLMs` · `Computer Vision`
+## Writing
 
-`Scikit-learn` · `TensorFlow` · `Pandas` · `NumPy` · `TF-IDF` · `Logistic Regression` · `Random Forest`
-
-### AI Engineering
-
-`LangGraph` · `Prompt Engineering` · `LLM Evaluation` · `AI Agents` · `Model Calibration` · `Explainable AI`
-
-### Software Engineering
-
-<p>
-<img src="https://skillicons.dev/icons?i=react,vite,flask,git,github,html,css,tailwind" />
-</p>
-
-`REST APIs` · `Full-Stack Development` · `Streamlit` · `Git/GitHub` · `Agile / SDLC`
+- **Designing AI SaaS Websites: A Strategic Guide Inspired by Leading AI Companies** — trust signals, clarity, and how AI products present capability without overclaiming.
+- **Designing AI Demos for Business: A Practical Guide Using Streamlit and Modern Web Integration** — turning ML systems into demos non-engineers can evaluate.
 
 ---
 
-# 🔭 Areas I'm Exploring
+## Beyond the code
 
-```text
-                 ┌───────────────────┐
-                 │    Reliable AI    │
-                 └─────────┬─────────┘
-                           │
-       ┌───────────────────┼───────────────────┐
-       ▼                   ▼                   ▼
- LLM Reliability      AI Evaluation      Explainable AI
-       │                   │                   │
-       └───────────────────┼───────────────────┘
-                           ▼
-                    Generative AI
-                           │
-             ┌─────────────┴─────────────┐
-             ▼                           ▼
-        Agentic AI                  NLP / CV
-```
+**Coordinator, Code Conquerors Programming Club** — ran contests and DSA workshops for 100+ students; volunteer → coordinator in 5 months.
+**Coordinator, Training & Placement Cell / BITWISE** — placement activities, technical events, recruiter coordination.
 
-**AI Research × Machine Learning × Software Engineering**
+**Certifications:** Deloitte Australia Technology Virtual Experience · Certificate of Merit, Kodeathon · Hacktron Hackathon · Certificate of Appreciation, ICMME 2025
 
 ---
-
-# 🏅 Leadership
-
-### 👨‍💻 Coordinator — Code Conquerors Programming Club
-
-* Coding contests and DSA workshops
-* Engaged **100+ students**
-* Volunteer → Coordinator within 5 months
-
-### 🎯 Coordinator — Training & Placement Cell / BITWISE Programming Hub
-
-* Placement activities
-* Technical events
-* Student and recruiter coordination
-
----
-
-# 📊 GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=sargamsahu1011&show_icons=true&hide_border=true&count_private=true&rank_icon=github&theme=transparent" height="170"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sargamsahu1011&layout=compact&hide_border=true&theme=transparent" height="170"/>
-
-<br>
-
-<img src="https://streak-stats.demolab.com?user=sargamsahu1011&hide_border=true&theme=transparent"/>
-
-</div>
-
----
-
-# 🐍 Contribution Activity
-
-<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=sargamsahu1011&show_icons=true&hide_border=true&count_private=true&rank_icon=github&theme=transparent" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sargamsahu1011&layout=compact&hide_border=true&theme=transparent" height="160"/>
 
 <img src="https://raw.githubusercontent.com/sargamsahu1011/sargamsahu1011/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake"/>
 
-</div>
+<br><br>
 
----
-
-# 🎓 Education
-
-### Jaypee University of Engineering & Technology — JUET
-
-**B.Tech — Computer Science Engineering**
-**2024 – 2028**
-
----
-
-# 🏅 Certifications & Achievements
-
-* Deloitte Australia — Technology Virtual Experience Program
-* Certificate of Merit — Kodeathon
-* Certificate of Participation — Hacktron Hackathon
-* Certificate of Appreciation — ICMME 2025
-
----
-
-# 🎯 What I'm Looking For
-
-<div align="center">
-
-### 🤖 AI/ML Engineering
-
-### 💻 Software Engineering
-
-### 🔬 AI Research
-
-### 🚀 Applied AI / ML Systems
-
-**Internships · Research Internships · Software Engineering Roles · AI/ML Roles**
-
-</div>
-
----
-
-# 🤝 Let's Connect
-
-<div align="center">
-
-<a href="https://linkedin.com/in/sargamsahu1011">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
-
-<a href="https://github.com/sargamsahu1011">
-<img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
-<a href="https://arxiv.org/abs/2608.23897">
-<img src="https://img.shields.io/badge/arXiv-Research-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white">
-</a>
-
-</div>
-
-<br>
-
-<div align="center">
-
-### *Research deeply. Build practically. Measure honestly.*
+***Research deeply. Build practically. Measure honestly.***
 
 </div>
